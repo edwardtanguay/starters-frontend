@@ -1,6 +1,10 @@
 - .. local site finished
 	- x send graphic url
 	- x show two with graphics
+	- .. responsive whole site
+		- .. online
+
+
 	- .. clicking graphic shows one
 		- x link
 		- x refactor to components
@@ -8,6 +12,7 @@
 			- x backend: output list as markdown  
 			- x convert mark-down
 				- x make dummy tool
+
 		- .. create readme
 			- x get tripleclick to work
 			- .. create in backend

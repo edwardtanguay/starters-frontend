@@ -8,15 +8,34 @@ body {
 
 	.App {
 
+		/* smartphone view */
+		@media (max-width: 577px) {
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			h2 {
+				font-size: 1rem;
+				margin-top: -.6rem;
+				margin-bottom: 1.1rem;
+			}
+		}
+
+		/* computer/tablet view */
+		@media (min-width: 578px) {
+			h2 {
+				font-size: 1.5rem;
+				margin-top: -1.2rem;
+			}
+		}
+
 		h1 {
 			color: rgb(209, 168, 85);
 		}
 
 		h2 {
 			color: #999;
-			font-size: 1.5rem;
 			font-weight: normal;
-			margin-top: -1.2rem;
 			font-style: italic;
 		}
 
@@ -78,25 +97,55 @@ body {
 
 			.singleStarter {
 
-				display: flex;
-				gap: 2rem;
-				margin-top: 2rem;
+				/* smartphone view */
+				@media (max-width: 577px) {
+					margin-top: 1rem;
+
+					img {
+						width: 100%;
+					}
+
+					.title {
+						margin-top: 1.5rem;
+						font-size: 1.7rem;
+					}
+
+					.description {
+						font-size: 1rem;
+					}
+				}
+
+				/* computer view */
+				@media (min-width: 578px) {
+					display: flex;
+					gap: 2rem;
+					margin-top: 2rem;
+
+					img {
+						width: 30rem;
+					}
+
+					.title {
+						font-size: 2.5rem;
+					}
+
+					.description {
+						font-size: 1.3rem;
+					}
+				}
 
 				img {
 					box-shadow: .5rem .5rem 1rem #222;
-					width: 30rem;
 					height: fit-content;
 				}
 
 				.title {
-					font-size: 2.5rem;
 					color: #111;
 					font-weight: bold;
 					text-shadow: .1rem .1rem 1.2rem #aaa;
 				}
 
 				.description {
-					font-size: 1.3rem;
 					color: #888;
 					font-style: italic;
 					margin-top: .3rem;
@@ -114,13 +163,36 @@ body {
 					}
 				}
 
+				/* smartphone view */
+				@media (max-width: 577px) {
+					ul.features {
+						margin-top: 1.2rem;
+						margin-bottom: 3rem;
+
+						li {
+							margin-bottom: -.8rem;
+							font-size: 1rem;
+						}
+					}
+				}
+
+				/* computer/tablet view */
+				@media (min-width: 578px) {
+					ul.features {
+						margin-top: 2rem;
+
+						li {
+							margin-bottom: -1rem;
+							font-size: 1.5rem;
+						}
+					}
+				}
+
 				ul.features {
 					margin-left: -1rem;
-					margin-top: 2rem;
+
 
 					li {
-						font-size: 1.5rem;
-						margin-bottom: -1rem;
 						color: rgb(210, 210, 153);
 
 						strong {
@@ -129,7 +201,7 @@ body {
 					}
 
 					code {
-						color:rgb(238, 238, 115); 
+						color: rgb(238, 238, 115);
 						background-color: #444;
 						padding-left: .5rem;
 						padding-right: .5rem;
