@@ -25,21 +25,24 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 				<a target="_blank" href={singleStarter.githubUrl}>
 					<button>GitHub Repository</button>
 				</a>
-				<ul className="features">
-					{singleStarter.features.map((feature, i) => {
-						return (
-							<li
-								key={i}
-								dangerouslySetInnerHTML={{
-									__html: convertMarkdownToHtml(feature),
-								}}
-							></li>
-						);
-					})}
-				</ul>
+				{!showReadme && (
+					<ul className="features">
+						{singleStarter.features.map((feature, i) => {
+							return (
+								<li
+									key={i}
+									dangerouslySetInnerHTML={{
+										__html: convertMarkdownToHtml(feature),
+									}}
+								></li>
+							);
+						})}
+					</ul>
+				)}
 				{showReadme && (
 					<div className="readmeArea">
-						<textarea>the readme</textarea>
+						<h1>README.md</h1>
+						<textarea readOnly>the readme</textarea>
 					</div>
 				)}
 			</div>
