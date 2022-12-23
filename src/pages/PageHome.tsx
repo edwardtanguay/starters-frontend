@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { AppContext } from '../appContext';
 import { useParams } from 'react-router-dom';
 import { Starters } from '../components/Starters';
+import { SingleStarter } from '../components/SingleStarter';
 
 export const PageHome = () => {
 	const { starters } = useContext(AppContext);
@@ -9,7 +10,11 @@ export const PageHome = () => {
 
 	return (
 		<div className="page pageHome">
-			<Starters starters={starters} />
+			{idCode ? (
+				<SingleStarter idCode={idCode} />
+			) : (
+				<Starters starters={starters} />
+			)}
 		</div>
 	);
 };
