@@ -5,4 +5,5 @@ export interface IStarter {
 	description: string;
 	features: string;
 	githubUrl: string;
+	imageUrl: string;
 }
