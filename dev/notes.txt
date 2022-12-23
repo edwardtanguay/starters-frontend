@@ -2,7 +2,8 @@
 	- x send graphic url
 	- x show two with graphics
 	- .. responsive whole site
-		- .. online
+		- x online
+		- .. first page
 
 
 	- .. clicking graphic shows one

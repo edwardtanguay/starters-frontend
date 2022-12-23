@@ -59,16 +59,71 @@ body {
 		}
 
 		.pageHome {
+
+			/* smartphone view */
+			@media (max-width: 577px) {
+				.starters {
+					.starter {
+						display: block;
+						margin-bottom: 3rem;
+
+						img {
+							width: 100%;
+						}
+						.title {
+							text-align: center;
+							margin-top: .7rem;
+						}
+						.description {
+							display: none;
+						}
+						button {
+							display: none;
+						}
+					}
+				}
+			}
+
+			/* computer/tablet view */
+			@media (min-width: 578px) {
+				.starters {
+					.starter {
+						display: flex;
+						gap: 1rem;
+
+						img {
+							width: 15rem;
+							height: 10rem;
+						}
+					}
+				}
+			}
+
+			/* computer/tablet view */
+			@media (min-width: 1140px) {
+				.starters {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+
+					.starter {
+						display: flex;
+						gap: 1rem;
+
+						img {
+							width: 15rem;
+							height: 10rem;
+						}
+					}
+				}
+			}
+
 			.starters {
 				.starter {
-					display: flex;
-					gap: 1rem;
 					margin-top: 1.5rem;
 
 					img {
 						box-shadow: .5rem .5rem 1rem #222;
-						width: 15rem;
-						height: 10rem;
 					}
 
 					.title {
