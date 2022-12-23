@@ -1,6 +1,6 @@
 # starters-frontend
 
-The frontend to starters.tanguay.eu which offers templates and mini-frameworks to expedite your coding.
+The frontend to starters.tanguay.eu which offers templates and frameworks to expedite your coding.
 
 ## install
 
