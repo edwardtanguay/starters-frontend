@@ -6,7 +6,15 @@ interface IProps {
 
 export const SingleStarter = ({ singleStarter } : IProps) => {
 	return (
-		<>
-			<h2>single starter: {singleStarter.title}</h2> </>
+		<div className="singleStarter">
+			<img src={singleStarter.imageUrl}/>
+			<div className="info">
+				<div className="title">{singleStarter.title}</div>
+				<div className="description">{singleStarter.description}</div>
+				<a target="_blank" href={singleStarter.githubUrl}>
+					<button>GitHub Repository</button>
+				</a>
+			</div>
+	</div>	
 	);
 };

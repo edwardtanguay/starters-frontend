@@ -6,40 +6,85 @@ body {
 	font-family: sans-serif;
 	padding: 0 1rem;
 
-	button {
-		font-size: v.$button-font-size;
-	}
+	.App {
 
-	h1 {
-		color: rgb(209, 168, 85);
-	}
-
-	nav {
-		background-color: #222;
-		padding: .5rem;
-
-		a {
-			color: #aaa;
-			text-decoration: none;
-			margin-right: 1rem;
+		h1 {
+			color: rgb(209, 168, 85);
 		}
 
-		a.active {
-			color: rgb(211, 211, 110);
+		h2 {
+			color: #999;
+			font-size: 1.2rem;
+			font-weight: normal;
+			margin-top: -1.2rem;
+			font-style: italic;
 		}
-	}
 
-	.pageHome {
-		.starters {
-			.starter {
+		button {
+			font-size: v.$button-font-size;
+		}
+
+		nav {
+			background-color: #222;
+			padding: .5rem;
+
+			a {
+				color: #aaa;
+				text-decoration: none;
+				margin-right: 1rem;
+			}
+
+			a.active {
+				color: rgb(211, 211, 110);
+			}
+		}
+
+		.pageHome {
+			.starters {
+				.starter {
+					display: flex;
+					gap: 1rem;
+					margin-top: 1.5rem;
+
+					img {
+						box-shadow: .5rem .5rem 1rem #222;
+						width: 15rem;
+						height: 10rem;
+					}
+
+					.title {
+						font-size: 2rem;
+						color: #111;
+					}
+
+					.description {
+						font-size: 1.3rem;
+						color: #888;
+						font-style: italic;
+					}
+
+					button {
+						margin-top: 1rem;
+						background-color: #555;
+						border-radius: .2rem;
+						padding: .3rem;
+
+						&:hover {
+							background-color: #777;
+						}
+					}
+				}
+			}
+
+			.singleStarter {
+
 				display: flex;
-				gap: 1rem;
-				margin-top: 1.5rem;
+				gap: 2rem;
+				margin-top: 2rem;
 
 				img {
 					box-shadow: .5rem .5rem 1rem #222;
-					width: 15rem;
-					height: 10rem;
+					width: 30rem;
 				}
 
 				.title {
@@ -58,6 +103,7 @@ body {
 					background-color: #555;
 					border-radius: .2rem;
 					padding: .3rem;
+
 					&:hover {
 						background-color: #777;
 					}
@@ -65,5 +111,4 @@ body {
 			}
 		}
 	}
-
 }
