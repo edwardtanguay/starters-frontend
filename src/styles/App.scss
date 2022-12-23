@@ -85,17 +85,22 @@ body {
 				img {
 					box-shadow: .5rem .5rem 1rem #222;
 					width: 30rem;
+					height: fit-content;
 				}
 
 				.title {
-					font-size: 2rem;
+					font-size: 2.5rem;
 					color: #111;
+					font-weight: bold;
+					text-shadow: .1rem .1rem 1.2rem #aaa;
 				}
 
 				.description {
 					font-size: 1.3rem;
 					color: #888;
 					font-style: italic;
+					margin-top: .3rem;
+					margin-bottom: .3rem;
 				}
 
 				button {
@@ -106,6 +111,28 @@ body {
 
 					&:hover {
 						background-color: #777;
+					}
+				}
+
+				ul.features {
+					margin-left: -1rem;
+					margin-top: 2rem;
+
+					li {
+						font-size: 1.5rem;
+						margin-bottom: -1rem;
+						color: rgb(210, 210, 153);
+
+						strong {
+							color: rgb(184, 128, 24);
+						}
+					}
+
+					code {
+						color:rgb(238, 238, 115); 
+						background-color: #444;
+						padding-left: .5rem;
+						padding-right: .5rem;
 					}
 				}
 			}
