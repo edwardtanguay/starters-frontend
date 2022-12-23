@@ -1,9 +1,10 @@
 import { useContext } from 'react';
 import { AppContext } from '../appContext';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 
 export const PageHome = () => {
 	const { starters } = useContext(AppContext);
+	const { idCode } = useParams();
 
 	return (
 		<div className="page pageHome">

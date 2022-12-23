@@ -4,6 +4,7 @@ import { PageHome } from './pages/PageHome';
 import { PageAbout } from './pages/PageAbout';
 
 function App() {
+
 	return (
 		<div className="App">
 			<h1>Starters</h1>
@@ -13,7 +14,9 @@ function App() {
 			</nav>
 
 			<Routes>
-				<Route path="/home" element={<PageHome />} />
+				<Route path="/home" element={<PageHome />}>
+					<Route path=":idCode" element={null}/>
+				</Route>
 				<Route path="/about" element={<PageAbout />} />
 				<Route
 					path="/"
