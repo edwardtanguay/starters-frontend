@@ -16,6 +16,6 @@
 		- .. create readme
 			- x get tripleclick to work
 			- x create in backend
-			- .. green button
+			- x green button
 			- .. include install instructions (installList, installLines) 
 		- synchronize the two readmes	
