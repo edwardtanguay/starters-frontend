@@ -14,6 +14,13 @@ export const SingleStarter = ({ singleStarter } : IProps) => {
 				<a target="_blank" href={singleStarter.githubUrl}>
 					<button>GitHub Repository</button>
 				</a>
+				<ul className="features">
+					{singleStarter.features.map(feature => {
+						return (
+							<li>{feature}</li>
+						)
+					})}
+				</ul>
 			</div>
 	</div>	
 	);

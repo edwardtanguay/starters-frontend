@@ -3,7 +3,9 @@
 	- x show two with graphics
 	- .. clicking graphic shows one
 		- x link
-		- .. refactore to components
+		- x refactor to components
+		- .. on single, show list
+			- .. backend: output list as markdown  
 
 	- 3-screen responsive: 2-column, 1-column, 1-column-under 
 		
