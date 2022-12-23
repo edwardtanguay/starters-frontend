@@ -3,6 +3,6 @@ export interface IStarter {
 	idCode: string;
 	title: string;
 	description: string;
-	characteristics: string;
+	features: string;
 	githubUrl: string;
 }

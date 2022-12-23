@@ -1,7 +1,5 @@
-- INFOS
-	- vit-dar
-	- vit-dar-men
-- .. online site with two starters (vite-dark, vite-dark-menu)
-	- .. database with two starters
-	- frontend one page: All Starters, show the two
-		- with download, GitHub  
+- .. local site finished
+	- .. send graphic url
+	 - show two with graphics
+		
+	- make single page
