@@ -2,7 +2,8 @@
 	- x send graphic url
 	- x show two with graphics
 	- .. clicking graphic shows one
-		- .. link
+		- x link
+		- .. refactore to components
 
 	- 3-screen responsive: 2-column, 1-column, 1-column-under 
 		
