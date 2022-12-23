@@ -1,3 +1,6 @@
+import MarkdownIt from 'markdown-it';
+
 export const convertMarkdownToHtml = (markdown: string) => {
-	return markdown + '--converted';
+	const md = new MarkdownIt();
+	return md.render(markdown);
 }

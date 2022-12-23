@@ -16,8 +16,8 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					<button>GitHub Repository</button>
 				</a>
 				<ul className="features">
-					{singleStarter.features.map((feature) => {
-						return <li>{convertMarkdownToHtml(feature)}</li>;
+					{singleStarter.features.map((feature, i) => {
+						return <li key={i} dangerouslySetInnerHTML={{__html: convertMarkdownToHtml(feature)}}></li>;
 					})}
 				</ul>
 			</div>
