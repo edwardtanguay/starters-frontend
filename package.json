@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"setup": "pm2 start --name starters npm -- start",
+		"setup": "pm2 start --name starters-tanguay-eu npm -- start",
 		"start": "vite preview --host --port 3505",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu",
 		"push": "git add . && git commit -m \"predeploy\" && git push",
