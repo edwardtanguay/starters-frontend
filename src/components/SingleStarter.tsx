@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { IStarter } from '../interfaces';
 import { convertMarkdownToHtml } from '../tools';
 
@@ -6,9 +7,18 @@ interface IProps {
 }
 
 export const SingleStarter = ({ singleStarter }: IProps) => {
+	const [showReadme, setShowReadme] = useState(false);
+
 	return (
 		<div className="singleStarter">
-			<img src={singleStarter.imageUrl} />
+			<img
+				src={singleStarter.imageUrl}
+				onClick={(e) => {
+					if (e.detail === 3) {
+						setShowReadme(!showReadme);
+					}
+				}}
+			/>
 			<div className="info">
 				<div className="title">{singleStarter.title}</div>
 				<div className="description">{singleStarter.description}</div>
@@ -17,9 +27,21 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 				</a>
 				<ul className="features">
 					{singleStarter.features.map((feature, i) => {
-						return <li key={i} dangerouslySetInnerHTML={{__html: convertMarkdownToHtml(feature)}}></li>;
+						return (
+							<li
+								key={i}
+								dangerouslySetInnerHTML={{
+									__html: convertMarkdownToHtml(feature),
+								}}
+							></li>
+						);
 					})}
 				</ul>
+				{showReadme && (
+					<div className="readmeArea">
+						<textarea>the readme</textarea>
+					</div>
+				)}
 			</div>
 		</div>
 	);

@@ -4,10 +4,12 @@
 	- .. clicking graphic shows one
 		- x link
 		- x refactor to components
-		- .. on single, show list
+		- x on single, show list
 			- x backend: output list as markdown  
-			- .. convert mark-down
-				- .. make dummy tool
+			- x convert mark-down
+				- x make dummy tool
+		- .. create readme
+			- .. get tripleclick to work
 	- 3-screen responsive: 2-column, 1-column, 1-column-under 
 		
 	- make single page
