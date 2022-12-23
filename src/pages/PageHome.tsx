@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { AppContext } from '../appContext'; 
+
 export const PageHome = () => {
+	const { starters } = useContext(AppContext);
+	
 	return (
 		<div className="page pageHome">
-			<p>This is the Home page.</p>
+			<h2>There are {starters.length} starters:</h2>
 		</div>
 	);
 };
