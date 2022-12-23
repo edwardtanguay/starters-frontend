@@ -9,7 +9,8 @@
 			- x convert mark-down
 				- x make dummy tool
 		- .. create readme
-			- .. get tripleclick to work
+			- x get tripleclick to work
+			- .. create in backend
 	- 3-screen responsive: 2-column, 1-column, 1-column-under 
 		
 	- make single page

@@ -42,7 +42,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 				{showReadme && (
 					<div className="readmeArea">
 						<h1>README.md</h1>
-						<textarea readOnly>the readme</textarea>
+						<textarea readOnly>{singleStarter.readmeText}</textarea>
 					</div>
 				)}
 			</div>

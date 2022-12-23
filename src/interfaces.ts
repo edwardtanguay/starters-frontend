@@ -7,4 +7,5 @@ export interface IStarter {
 	features: string[];
 	githubUrl: string;
 	imageUrl: string;
+	readmeText: string;
 }
