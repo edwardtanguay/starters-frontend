@@ -208,10 +208,31 @@ body {
 					}
 				}
 
+				/* smartphone view */
+				@media (max-width: 577px) {
+					.readmeArea {
+						width: 92%;
+
+						textarea {
+							width: 95.3%;
+						}
+					}
+				}
+
+				/* computer/tablet view */
+				@media (min-width: 578px) {
+					.readmeArea {
+						width: 35rem;
+
+						textarea {
+							width: 97.3%;
+						}
+					}
+				}
+
 				.readmeArea {
 					margin-top: 2rem;
 					background: #222;
-					width: 35rem;
 					border-radius: .5rem;
 					padding: 1rem;
 
@@ -223,7 +244,6 @@ body {
 					}
 
 					textarea {
-						width: 97.3%;
 						height: 15rem;
 						background-color: #888;
 						border: 0;
