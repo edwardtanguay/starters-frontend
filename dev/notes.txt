@@ -1,12 +1,11 @@
 - .. local site finished
 	- x send graphic url
 	- x show two with graphics
-	- .. responsive whole site
+	- x responsive whole site
 		- x online
-		- .. first page
-
-
-	- .. clicking graphic shows one
+		- x first page
+		- x 3-screen responsive: 2-column, 1-column, 1-column-under 
+	- x clicking graphic shows one
 		- x link
 		- x refactor to components
 		- x on single, show list
@@ -16,7 +15,7 @@
 
 		- .. create readme
 			- x get tripleclick to work
-			- .. create in backend
-	- 3-screen responsive: 2-column, 1-column, 1-column-under 
-		
-	- make single page
+			- x create in backend
+			- .. green button
+			- .. include install instructions (installList, installLines) 
+		- synchronize the two readmes	

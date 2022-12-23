@@ -1,5 +1,6 @@
 @use 'variables' as v;
 
+
 body {
 	background-color: #333;
 	color: #ccc;
@@ -70,13 +71,16 @@ body {
 						img {
 							width: 100%;
 						}
+
 						.title {
 							text-align: center;
 							margin-top: .7rem;
 						}
+
 						.description {
 							display: none;
 						}
+
 						button {
 							display: none;
 						}
@@ -139,13 +143,7 @@ body {
 
 					button {
 						margin-top: 1rem;
-						background-color: #555;
-						border-radius: .2rem;
-						padding: .3rem;
-
-						&:hover {
-							background-color: #777;
-						}
+						@include v.repositoryButton;
 					}
 				}
 			}
@@ -209,13 +207,7 @@ body {
 
 				button {
 					margin-top: 1rem;
-					background-color: #555;
-					border-radius: .2rem;
-					padding: .3rem;
-
-					&:hover {
-						background-color: #777;
-					}
+					@include v.repositoryButton;
 				}
 
 				/* smartphone view */

@@ -1,1 +1,12 @@
 $button-font-size: 1.1rem;
+
+@mixin repositoryButton {
+	border: 1px solid rgb(38, 107, 38);
+	background-color: rgb(46, 97, 46);
+	border-radius: .2rem;
+	padding: .3rem;
+
+	&:hover {
+		background-color: green;
+	}
+}
