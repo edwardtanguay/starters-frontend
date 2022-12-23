@@ -7,7 +7,7 @@ The frontend to starters.tanguay.eu which offers templates and mini-frameworks t
 - create an `.env` file with a the full URL of the starts-backend website
 
 ```text
-VITE_BACKEND_URL = https://localhost:3502
+VITE_BACKEND_URL = http://localhost:3502
 ```
 
 ## start
