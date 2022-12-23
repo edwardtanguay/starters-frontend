@@ -5,8 +5,9 @@
 		- x link
 		- x refactor to components
 		- .. on single, show list
-			- .. backend: output list as markdown  
-
+			- x backend: output list as markdown  
+			- .. convert mark-down
+				- .. make dummy tool
 	- 3-screen responsive: 2-column, 1-column, 1-column-under 
 		
 	- make single page
