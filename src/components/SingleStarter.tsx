@@ -1,11 +1,12 @@
+import { IStarter } from '../interfaces';
 
 interface IProps {
-	idCode: string;
+	singleStarter: IStarter;
 }
 
-export const SingleStarter = ({ idCode } : IProps) => {
+export const SingleStarter = ({ singleStarter } : IProps) => {
 	return (
 		<>
-			<h2>single starter: {idCode}</h2> </>
+			<h2>single starter: {singleStarter.title}</h2> </>
 	);
 };
