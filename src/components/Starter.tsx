@@ -12,7 +12,7 @@ export const Starter = ({ starter }: IProps) => {
 				<img src={starter.imageUrl} />
 			</NavLink>
 			<div className="info">
-				<div className="title">{starter.title}</div>
+				<div className="title">{starter.title}<span className="smartphone-only">{starter.description}</span></div>
 				<div className="description">{starter.description}</div>
 				<a target="_blank" href={starter.githubUrl}>
 					<button>GitHub Repository</button>

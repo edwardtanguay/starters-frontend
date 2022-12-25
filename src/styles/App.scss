@@ -66,15 +66,25 @@ body {
 				.starters {
 					.starter {
 						display: block;
-						margin-bottom: 3rem;
+						margin-bottom: 5rem;
 
 						img {
 							width: 100%;
 						}
 
 						.title {
-							text-align: center;
+							font-size: 1.2rem !important;
 							margin-top: .7rem;
+							font-weight: bold;
+							color: rgb(202, 202, 119) !important;
+							.smartphone-only {
+								&:before {
+									content: "\00a0-\00a0"
+								}
+								color: rgb(132, 107, 60);
+								font-weight: normal;
+								font-style: italic;
+							}	
 						}
 
 						.description {
@@ -98,6 +108,11 @@ body {
 						img {
 							width: 15rem;
 							height: 10rem;
+						}
+						.title {
+							.smartphone-only {
+								display: none;
+							}
 						}
 					}
 				}
