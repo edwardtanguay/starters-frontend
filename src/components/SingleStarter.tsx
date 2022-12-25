@@ -19,17 +19,19 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					name="viewport"
 					content="width=device-width, initial-scale=1.0"
 				/>
-				<meta property="og:title" content="Developer Jobs in Germany" />
-				<meta property="og:type" content="site" />
+				<meta property="og:title" content="Developer Jobs in Germany"  data-react-helmet="true"/>
+				<meta property="og:type" content="site"  data-react-helmet="true"/>
 				<meta
 					property="og:description"
 					content="Daily developer Jobs in Germany listed with information on skills needed and links to learn these skills"
+					 data-react-helmet="true"
 				/>
 				<meta
 					property="og:image"
 					content="https://jobs.tanguay.eu/images/screenshot-jobsite.png"
+					 data-react-helmet="true"
 				/>
-				<meta property="og:url" content="https://jobs.tanguay.eu" />
+				<meta property="og:url" content="https://jobs.tanguay.eu" data-react-helmet="true" />
 			</Helmet>
 			<div className="singleStarter">
 				<img
