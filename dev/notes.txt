@@ -1,6 +1,7 @@
 - .. add getajob007 on a full-stack item
-	- .. generate new objects
-	- show all information on frontend
+	- x generate new objects
+	- .. show all information on frontend
+		- .. animation
 
 
 

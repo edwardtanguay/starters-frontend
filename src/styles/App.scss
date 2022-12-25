@@ -77,14 +77,16 @@ body {
 							margin-top: .7rem;
 							font-weight: bold;
 							color: rgb(202, 202, 119) !important;
+
 							.smartphone-only {
 								&:before {
 									content: "\00a0-\00a0"
 								}
+
 								color: rgb(132, 107, 60);
 								font-weight: normal;
 								font-style: italic;
-							}	
+							}
 						}
 
 						.description {
@@ -109,6 +111,7 @@ body {
 							width: 15rem;
 							height: 10rem;
 						}
+
 						.title {
 							.smartphone-only {
 								display: none;
@@ -143,8 +146,11 @@ body {
 
 					img {
 						box-shadow: .5rem .5rem 1rem #222;
+
 						&:hover {
-						box-shadow: .2rem .2rem 1rem #555; 
+							box-shadow: .2rem .2rem 1rem #555;
+							box-shadow: .2rem .2rem 1rem #555;
+							box-shadow: .2rem .2rem 1rem #555;
 						}
 					}
 
@@ -315,6 +321,35 @@ body {
 						border-radius: .2rem;
 						padding: .5rem;
 					}
+				}
+			}
+
+			/* smartphone view */
+			@media (max-width: 577px) {
+				.animationArea {
+					display: none;
+				}
+			}
+
+			.animationArea {
+				border-top: .15rem dashed #444;
+				margin-top: 2rem;
+				padding-top: 2rem;
+				padding-bottom: 4rem;
+				text-align: center;
+
+				.animationTitle {
+					font-size: 2rem;
+					text-transform: uppercase;
+					font-family: courier;
+					color: #555;
+					letter-spacing: 2rem;
+					margin-bottom: 1rem;
+					font-weight: bold;
+				}
+
+				img {
+					box-shadow: .5rem .5rem 1rem #444;
 				}
 			}
 		}
