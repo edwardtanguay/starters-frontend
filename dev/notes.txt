@@ -1,15 +1,2 @@
-- .. add getajob007 on a full-stack item
-	- x generate new objects
-	- x show all information on frontend
-		- x animation
-	- x two repositories
-	- x resolve button on main page
-	- x fix to starters instead of starter
-	- x change to list
-	- x online
-		- x fix online animation issue with path (on Ubuntu) 
-	- x home to starters
-	- .. make frontend/backend readmes
-		- x switch current to escaped text
-	
 - .. socialmedia preview with helmet
+	
