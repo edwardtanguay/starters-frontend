@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { IStarter } from '../interfaces';
 import { convertMarkdownToHtml } from '../tools';
+import { RepositoryButtons } from './RepositoryButtons';
 
 interface IProps {
 	singleStarter: IStarter;
@@ -26,20 +27,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					<div className="description">
 						{singleStarter.description}
 					</div>
-					{singleStarter.githubUrl2.trim() === '' ? (
-						<a target="_blank" href={singleStarter.githubUrl}>
-							<button>GitHub Repository</button>
-						</a>
-					) : (
-						<>
-							<a target="_blank" href={singleStarter.githubUrl2}>
-								<button>Backend Repository</button>
-							</a>
-							<a target="_blank" href={singleStarter.githubUrl}>
-								<button>Frontend Repository</button>
-							</a>
-						</>
-					)}
+					<RepositoryButtons starter={singleStarter} />
 					{!showReadme && (
 						<ul className="features">
 							{singleStarter.features.map((feature, i) => {
