@@ -57,8 +57,8 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 						}}
 					/>
 					{singleStarter.updowngradeItems.length > 0 && (
-						<>
-							<h3>Downgrade/upgrade</h3>
+						<div className="updowngradeItemsArea">
+							<h3>Add/remove features</h3>
 							<ul>
 								{singleStarter.updowngradeItems.map(
 									(updowngradeItem, i) => {
@@ -74,7 +74,16 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 									}
 								)}
 							</ul>
-						</>
+						</div>
+					)}
+
+					{singleStarter.demoUrl.trim() !== '' && (
+						<div className="demoUrlArea">
+							<h3>Visit demo</h3>
+							<ul>
+								<li><a target="_blank" href={singleStarter.demoUrl}>{singleStarter.demoUrl}</a></li>
+							</ul>
+						</div>
 					)}
 				</div>
 

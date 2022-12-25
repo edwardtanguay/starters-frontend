@@ -69,6 +69,7 @@ body {
 						border-bottom: 0;
 						padding-bottom: .5rem;
 					}
+
 					.starter {
 						display: block;
 						margin-bottom: 2rem;
@@ -225,8 +226,14 @@ body {
 						margin-top: 2rem;
 						color: #666;
 					}
+
 					a {
 						color: rgb(192, 147, 51);
+					}
+
+					.updowngradeItemsArea,
+					.demoUrlArea {
+						margin-bottom: 2rem;
 					}
 				}
 

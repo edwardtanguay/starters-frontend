@@ -14,6 +14,7 @@ export interface IStarter {
 	isFullStack: boolean;
 	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
+	demoUrl: string;
 }
 
 export interface IUpdowngradeItem {
