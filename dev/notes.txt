@@ -4,9 +4,10 @@
 		- x animation
 	- x two repositories
 	- x resolve button on main page
+	- x fix to starters instead of starter
+	- .. change to list
 	- .. make frontend/backend readmes
 		- x online
 			- x fix online animation issue with path (on Ubuntu) 
-		- .. home to starters
-		- fix to starters instead of starter
+		- x home to starters
 	

@@ -4,13 +4,13 @@ import { useParams } from 'react-router-dom';
 import { Starters } from '../components/Starters';
 import { SingleStarter } from '../components/SingleStarter';
 
-export const PageStarters = () => {
+export const PageList = () => {
 	const { starters } = useContext(AppContext);
 	const { idCode } = useParams();
 	const singleStarter = starters.find((m) => m.idCode === idCode);
 
 	return (
-		<div className="page pageStarters">
+		<div className="page pageList">
 			{idCode ? (
 				<>
 					{singleStarter !== undefined && (
