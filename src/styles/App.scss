@@ -31,7 +31,7 @@ body {
 		}
 
 		h1 {
-			color: rgb(209, 168, 85);
+			color: v.$main_header_color;
 		}
 
 		h2 {
@@ -360,6 +360,13 @@ body {
 			display: flex;
 			gap: 1rem;
 
+			/* smartphone view */
+			@media (max-width: 577px) {
+				img {
+					width: 5rem !important;
+				}
+			}
+
 			img {
 				width: 10rem;
 				margin-top: 2rem;
@@ -371,9 +378,17 @@ body {
 			.info {
 				margin-top: 1rem;
 				font-size: 1.3rem;
-				font-style: italic;
 				color: #999;
-				width: 25rem;
+				width: 35rem;
+
+				p.highlight {
+					color: v.$main_header_color;
+					font-style: normal;
+				}
+
+				p {
+					font-style: italic;
+				}
 
 				.item {
 					margin-bottom: 1rem;

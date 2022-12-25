@@ -7,10 +7,10 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Starters: Templates and Fameworks</h1>
+			<h1>Starters, Templates and Frameworks</h1>
 			<h2>Base projects to get you up-and-coding fast!</h2>
 			<nav>
-				<NavLink to="/list">Show All Starters</NavLink>
+				<NavLink to="/list">Show All</NavLink>
 				<NavLink to="/about">About</NavLink>
 			</nav>
 
