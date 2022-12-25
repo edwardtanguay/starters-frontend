@@ -13,4 +13,10 @@ export interface IStarter {
 	installLines2: string[];
 	isFullStack: boolean;
 	animationUrl: string;
+	updowngradeItems: IUpdowngradeItem[];
 }
+
+export interface IUpdowngradeItem {
+	text: string;
+	idCode: string;
+};

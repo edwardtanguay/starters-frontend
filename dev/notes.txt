@@ -1,2 +1,5 @@
-- .. socialmedia preview with helmet
-	
+- x all with periods
+- .. make updowngradeItems
+	- .. If you want a menu, see [Dark Vite Menu](nnn)
+
+- demoUrl
