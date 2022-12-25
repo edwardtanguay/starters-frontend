@@ -64,9 +64,16 @@ body {
 			/* smartphone view */
 			@media (max-width: 577px) {
 				.starters {
+
+					.starter:last-child {
+						border-bottom: 0;
+						padding-bottom: .5rem;
+					}
 					.starter {
 						display: block;
-						margin-bottom: 5rem;
+						margin-bottom: 2rem;
+						border-bottom: 1px solid #414141;
+						padding-bottom: 1.6rem;
 
 						img {
 							width: 100%;
