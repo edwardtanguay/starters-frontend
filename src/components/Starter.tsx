@@ -15,7 +15,6 @@ export const Starter = ({ starter }: IProps) => {
 			<div className="info">
 				<div className="title">{starter.title}<span className="smartphone-only">{starter.description}</span></div>
 				<div className="description">{starter.description}</div>
-				<RepositoryButtons starter={starter}/>
 			</div>
 		</div>
 	);

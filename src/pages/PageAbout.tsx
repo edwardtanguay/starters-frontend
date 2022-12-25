@@ -4,7 +4,7 @@ export const PageAbout = () => {
 			<img src="images/edward_tanguay.jpg" />
 			<div className="info">
 				<p>
-					Hello, my name is Edward Tanguay, I make websites that help
+					My name is Edward Tanguay, I create websites that help
 					web developers be more effective.
 				</p>
 				<p>You might also like these:</p>

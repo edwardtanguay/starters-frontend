@@ -1,6 +1,10 @@
 - .. add getajob007 on a full-stack item
 	- x generate new objects
-	- .. show all information on frontend
+	- x show all information on frontend
 		- x animation
 	- x two repositories
-	- .. resolve button on main page
+	- x resolve button on main page
+	- .. make frontend/backend readmes
+		- .. online
+		- fix to starters instead of starter
+	
