@@ -9,7 +9,7 @@ interface IProps {
 export const Starter = ({ starter }: IProps) => {
 	return (
 		<div className="starter">
-			<NavLink to={`/home/${starter.idCode}`}>
+			<NavLink to={`/starters/${starter.idCode}`}>
 				<img src={starter.imageUrl} />
 			</NavLink>
 			<div className="info">

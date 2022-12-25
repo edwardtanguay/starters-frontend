@@ -5,6 +5,8 @@
 	- x two repositories
 	- x resolve button on main page
 	- .. make frontend/backend readmes
-		- .. online
+		- x online
+			- x fix online animation issue with path (on Ubuntu) 
+		- .. home to starters
 		- fix to starters instead of starter
 	
