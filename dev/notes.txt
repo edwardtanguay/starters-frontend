@@ -10,6 +10,6 @@
 		- x fix online animation issue with path (on Ubuntu) 
 	- x home to starters
 	- .. make frontend/backend readmes
-		- .. switch current to escaped text
+		- x switch current to escaped text
 	
 - .. socialmedia preview with helmet
