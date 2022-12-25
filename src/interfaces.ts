@@ -6,9 +6,11 @@ export interface IStarter {
 	featureList: string;
 	features: string[];
 	githubUrl: string;
+	githubUrl2: string;
 	imageUrl: string;
 	readmeText: string;
 	installLines: string[];
+	installLines2: string[];
 	isFullStack: boolean;
 	animationUrl: string;
 }

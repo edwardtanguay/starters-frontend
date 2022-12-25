@@ -1,9 +1,6 @@
 - .. add getajob007 on a full-stack item
 	- x generate new objects
 	- .. show all information on frontend
-		- .. animation
-
-
-
-- add animation property
-	
+		- x animation
+	- x two repositories
+	- .. resolve button on main page
