@@ -11,7 +11,7 @@ export const PageAbout = () => {
 					My name is Edward Tanguay, I create websites that help
 					web developers be more effective.
 				</p>
-				<p>You might also like these:</p>
+				<p>You might also like:</p>
 				<div className="item">
 					<a href="https://jobs.tanguay.eu">jobs.tanguay.eu</a> -
 					developer jobs in Germany with links to learn required
