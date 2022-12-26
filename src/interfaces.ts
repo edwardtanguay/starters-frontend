@@ -15,9 +15,15 @@ export interface IStarter {
 	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
 	demoUrl: string;
+	learningMaterialItems: ILearningMaterialItem[];
 }
 
 export interface IUpdowngradeItem {
 	text: string;
 	idCode: string;
 };
+
+export interface ILearningMaterialItem {
+	title: string;
+	url: string;
+}

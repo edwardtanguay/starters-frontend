@@ -79,12 +79,31 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 
 					{singleStarter.demoUrl.trim() !== '' && (
 						<div className="demoUrlArea">
-							<h3>Visit demo</h3>
+							<h3>Live demo</h3>
 							<ul>
 								<li><a target="_blank" href={singleStarter.demoUrl}>{singleStarter.demoUrl}</a></li>
 							</ul>
 						</div>
 					)}
+
+					{singleStarter.learningMaterialItems.length > 0 && (
+						<div className="learningMaterialArea">
+							<h3>Learning material</h3>
+							<ul>
+								{singleStarter.learningMaterialItems.map(
+									(learningMaterialItem, i) => {
+										return (
+											<li key={i}>
+												<a target="_blank" href={learningMaterialItem.url}>{learningMaterialItem.title}</a>
+													
+											</li>
+										);
+									}
+								)}
+							</ul>
+						</div>
+					)}
+
 				</div>
 
 				<div className="info">

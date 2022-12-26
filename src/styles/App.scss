@@ -232,7 +232,8 @@ body {
 					}
 
 					.updowngradeItemsArea,
-					.demoUrlArea {
+					.demoUrlArea,
+					.learningMaterialArea {
 						margin-bottom: 2rem;
 					}
 				}
@@ -381,6 +382,7 @@ body {
 
 				img {
 					box-shadow: .5rem .5rem 1rem #444;
+					max-width: 90%;
 				}
 			}
 		}

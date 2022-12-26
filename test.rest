@@ -1,4 +1,4 @@
-@url = http://localhost:3504
+@url = http://localhost:3604
 
 ### base route
 {{url}}
