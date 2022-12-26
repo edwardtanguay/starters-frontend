@@ -233,8 +233,15 @@ body {
 
 					.updowngradeItemsArea,
 					.demoUrlArea,
-					.learningMaterialArea {
+					.learningMaterialArea,
+					todoItemArea {
 						margin-bottom: 2rem;
+					}
+
+					.todoItemArea ul {
+						font-family: courier;
+						color: tomato;
+						background-color: #383838;
 					}
 				}
 

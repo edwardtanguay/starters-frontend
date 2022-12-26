@@ -104,6 +104,21 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 						</div>
 					)}
 
+					{singleStarter.todoItems.length > 0 && (
+						<div className="todoItemArea">
+							<h3>Todo</h3>
+							<ul>
+								{singleStarter.todoItems.map(
+									(todoItem, i) => {
+										return (
+											<li key={i}>{todoItem}</li>
+										);
+									}
+								)}
+							</ul>
+						</div>
+					)}
+
 				</div>
 
 				<div className="info">

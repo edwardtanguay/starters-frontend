@@ -16,6 +16,7 @@ export interface IStarter {
 	updowngradeItems: IUpdowngradeItem[];
 	demoUrl: string;
 	learningMaterialItems: ILearningMaterialItem[];
+	todoItems: string[];
 }
 
 export interface IUpdowngradeItem {
