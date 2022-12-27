@@ -8,8 +8,6 @@ export interface IStarter {
 	githubUrl2: string;
 	imageUrl: string;
 	readmeText: string;
-	installLines: string[];
-	installLines2: string[];
 	isFullStack: boolean;
 	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
