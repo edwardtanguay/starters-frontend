@@ -81,7 +81,14 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 						<div className="demoUrlArea">
 							<h3>Live demo</h3>
 							<ul>
-								<li><a target="_blank" href={singleStarter.demoUrl}>{singleStarter.demoUrl}</a></li>
+								<li>
+									<a
+										target="_blank"
+										href={singleStarter.demoUrl}
+									>
+										{singleStarter.demoUrl}
+									</a>
+								</li>
 							</ul>
 						</div>
 					)}
@@ -94,8 +101,14 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 									(learningMaterialItem, i) => {
 										return (
 											<li key={i}>
-												<a target="_blank" href={learningMaterialItem.url}>{learningMaterialItem.title}</a>
-													
+												<a
+													target="_blank"
+													href={
+														learningMaterialItem.url
+													}
+												>
+													{learningMaterialItem.title}
+												</a>
 											</li>
 										);
 									}
@@ -108,17 +121,12 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 						<div className="todoItemArea">
 							<h3>Todo</h3>
 							<ul>
-								{singleStarter.todoItems.map(
-									(todoItem, i) => {
-										return (
-											<li key={i}>{todoItem}</li>
-										);
-									}
-								)}
+								{singleStarter.todoItems.map((todoItem, i) => {
+									return <li key={i}>{todoItem}</li>;
+								})}
 							</ul>
 						</div>
 					)}
-
 				</div>
 
 				<div className="info">
@@ -128,20 +136,13 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					</div>
 					<RepositoryButtons starter={singleStarter} />
 					{!showReadme && (
-						<ul className="features">
-							{singleStarter.features.map((feature, i) => {
-								return (
-									<li
-										key={i}
-										dangerouslySetInnerHTML={{
-											__html: convertMarkdownToHtml(
-												feature
-											),
-										}}
-									></li>
-								);
-							})}
-						</ul>
+						<div className="features"
+							dangerouslySetInnerHTML={{
+								__html: convertMarkdownToHtml(
+									singleStarter.featureMarkdown
+								),
+							}}
+						></div>
 					)}
 					{showReadme && (
 						<div className="readmeArea">

@@ -271,50 +271,57 @@ body {
 
 				/* smartphone view */
 				@media (max-width: 577px) {
-					ul.features {
+					div.features {
 						margin-top: 1.2rem;
 						margin-bottom: 3rem;
-
-						li {
-							margin-bottom: -.8rem;
-							font-size: 1rem;
-						}
+						font-size: 1rem;
 					}
 				}
 
 				/* computer/tablet view */
 				@media (min-width: 578px) {
-					ul.features {
+					div.features {
 						margin-top: 2rem;
-
-						li {
-							margin-bottom: -1rem;
-							font-size: 1.5rem;
+						font-size: 1.5rem;
+						ul {
+							li {
+								margin-bottom: .5rem;
+							}
 						}
 					}
 				}
 
-				ul.features {
+				div.features {
 					margin-left: -1rem;
 
 
-					li {
-						color: rgb(210, 210, 153);
+					color: rgb(210, 210, 153);
 
-						strong {
-							color: rgb(184, 128, 24);
-						}
+					strong {
+						color: rgb(184, 128, 24);
+					}
 
-						a {
-							color: rgb(195, 195, 112);
-						}
+					a {
+						color: rgb(195, 195, 112);
 					}
 
 					code {
-						color: rgb(238, 238, 115);
-						background-color: #444;
+						color: black;
+						background-color: v.$code_background;
 						padding-left: .5rem;
 						padding-right: .5rem;
+					}
+
+					pre {
+						margin-left: 2.5rem;
+						text-indent: -.5rem;
+						background-color: v.$code_background;
+						width: max-content;
+						padding: .5rem;
+						
+						code {
+							background-color: transparent;
+						}
 					}
 				}
 
