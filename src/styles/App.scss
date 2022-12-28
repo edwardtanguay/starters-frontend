@@ -291,6 +291,7 @@ body {
 					div.features {
 						margin-top: 2rem;
 						font-size: 1.5rem;
+
 						ul {
 							li {
 								margin-bottom: .5rem;
@@ -410,11 +411,11 @@ body {
 		}
 
 		.pageAbout {
-			display: flex;
-			gap: 1rem;
+			width: 35rem;
 
 			/* smartphone view */
 			@media (max-width: 577px) {
+				width: 100%;
 				img {
 					width: 5rem !important;
 				}
@@ -428,27 +429,35 @@ body {
 				height: fit-content;
 			}
 
-			.info {
-				margin-top: 1rem;
-				font-size: 1.3rem;
-				color: #999;
-				width: 35rem;
-
-				p.highlight {
+			.siteDescription {
+				border-bottom: 1px solid #666;
+				p {
 					color: v.$main_header_color;
 					font-style: normal;
+					font-size: 1.2rem;
 				}
+			}
 
-				p {
-					font-style: italic;
-				}
+			.aboutAuthor {
+				display: flex;
+				gap: 1rem;
 
-				.item {
-					margin-bottom: 1rem;
+				.info {
+					margin-top: 1rem;
+					font-size: 1.3rem;
+					color: #999;
 
-					a {
-						color: rgb(239, 167, 13);
-						text-decoration: none;
+					p {
+						font-style: italic;
+					}
+
+					.item {
+						margin-bottom: 1rem;
+
+						a {
+							color: rgb(239, 167, 13);
+							text-decoration: none;
+						}
 					}
 				}
 			}
