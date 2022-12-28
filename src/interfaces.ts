@@ -9,11 +9,11 @@ export interface IStarter {
 	imageUrl: string;
 	readmeText: string;
 	isFullStack: boolean;
-	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
 	demoUrl: string;
 	learningMaterialItems: ILearningMaterialItem[];
 	todoItems: string[];
+	hasAnimation: boolean;
 }
 
 export interface IUpdowngradeItem {

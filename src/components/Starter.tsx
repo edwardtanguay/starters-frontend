@@ -10,10 +10,15 @@ export const Starter = ({ starter }: IProps) => {
 	return (
 		<div className="starter">
 			<NavLink to={`/list/${starter.idCode}`}>
-				<img src={starter.imageUrl} />
+				<img src={`/images/starters/${starter.idCode}.png`} />
 			</NavLink>
 			<div className="info">
-				<div className="title">{starter.title}<span className="smartphone-only">{starter.description}</span></div>
+				<div className="title">
+					{starter.title}
+					<span className="smartphone-only">
+						{starter.description}
+					</span>
+				</div>
 				<div className="description">{starter.description}</div>
 			</div>
 		</div>

@@ -49,7 +49,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 			<div className="singleStarter">
 				<div className="preInfo">
 					<img
-						src={singleStarter.imageUrl}
+						src={`/images/starters/${singleStarter.idCode}.png`}
 						onClick={(e) => {
 							if (e.detail === 3) {
 								setShowReadme(!showReadme);
@@ -155,11 +155,11 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 				</div>
 			</div>
 
-			{singleStarter.animationUrl && (
+			{singleStarter.hasAnimation && (
 				<div className="animationArea">
 					<div className="animationTitle">Animation</div>
 					<div className="moreInfoArea">
-						<img src={singleStarter.animationUrl} />
+						<img src={`/images/starters/${singleStarter.idCode}.gif`}/>
 					</div>
 				</div>
 			)}
