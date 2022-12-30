@@ -1,5 +1,24 @@
 @use 'variables' as v;
 
+/* smartphone view */
+@media (max-width: 577px) {
+	.smartphoneLayout-only {
+		display: block;
+	}
+	.computerTabletLayout-only {
+		display: none;
+	}
+}
+
+/* computer/tablet view */
+@media (min-width: 578px) {
+	.smartphoneLayout-only {
+		display: none;
+	}
+	.computerTabletLayout-only {
+		display: block;
+	}
+}
 
 body {
 	background-color: #333;
@@ -82,19 +101,10 @@ body {
 
 						.title {
 							font-size: 1.2rem !important;
-							margin-top: .7rem;
+							margin-top: .4rem;
 							font-weight: bold;
-							color: rgb(202, 202, 119) !important;
-
-							.smartphone-only {
-								&:before {
-									content: "\00a0-\00a0"
-								}
-
-								color: rgb(132, 107, 60);
-								font-weight: normal;
-								font-style: italic;
-							}
+							color: #222;
+							text-align: center;
 						}
 
 						.description {
@@ -416,6 +426,7 @@ body {
 			/* smartphone view */
 			@media (max-width: 577px) {
 				width: 100%;
+
 				img {
 					width: 5rem !important;
 				}
@@ -431,6 +442,7 @@ body {
 
 			.siteDescription {
 				border-bottom: 1px solid #666;
+
 				p {
 					color: v.$main_header_color;
 					font-style: normal;
