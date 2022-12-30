@@ -5,6 +5,7 @@
 	.smartphoneLayout-only {
 		display: block;
 	}
+
 	.computerTabletLayout-only {
 		display: none;
 	}
@@ -15,6 +16,7 @@
 	.smartphoneLayout-only {
 		display: none;
 	}
+
 	.computerTabletLayout-only {
 		display: block;
 	}
@@ -260,6 +262,12 @@ body {
 						font-family: courier;
 						color: tomato;
 						background-color: #383838;
+					}
+
+					.learningMaterialArea {
+						li {
+							margin-bottom: .7rem;
+						}
 					}
 				}
 
