@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Starters, Templates and Frameworks</h1>
-			<h2>Base projects to get you up-and-coding fast!</h2>
+			<h2>Base projects to get you up-and-coding fast</h2>
 			<nav>
 				<NavLink to="/list">Show All {starters.length}</NavLink>
 				<NavLink to="/about">About</NavLink>
