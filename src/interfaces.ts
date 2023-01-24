@@ -14,6 +14,7 @@ export interface IStarter {
 	learningMaterialItems: ILearningMaterialItem[];
 	todoItems: string[];
 	hasAnimation: boolean;
+	externalForkItems: IExternalHookItem[]
 }
 
 export interface IUpdowngradeItem {
@@ -22,6 +23,11 @@ export interface IUpdowngradeItem {
 };
 
 export interface ILearningMaterialItem {
+	title: string;
+	url: string;
+}
+
+export interface IExternalHookItem {
 	title: string;
 	url: string;
 }

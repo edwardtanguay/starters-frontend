@@ -117,6 +117,30 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 						</div>
 					)}
 
+					{singleStarter.externalForkItems.length > 0 && (
+						<div className="externalForkArea">
+							<h3>External forks</h3>
+							<ul>
+								{singleStarter.externalForkItems.map(
+									(externalForkItem, i) => {
+										return (
+											<li key={i}>
+												<a
+													target="_blank"
+													href={
+														externalForkItem.url
+													}
+												>
+													{externalForkItem.title}
+												</a>
+											</li>
+										);
+									}
+								)}
+							</ul>
+						</div>
+					)}
+
 					{singleStarter.todoItems.length > 0 && (
 						<div className="todoItemArea">
 							<h3>Todo</h3>
