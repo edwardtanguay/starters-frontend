@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
+		"build": "tsc --build --clean && vite build",
 		"setup": "pm2 start --name starters-tanguay-eu npm -- start",
 		"start": "vite preview --host --port 3506",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu",
