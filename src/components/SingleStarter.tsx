@@ -58,7 +58,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					/>
 					{singleStarter.updowngradeItems.length > 0 && (
 						<div className="updowngradeItemsArea">
-							<h3>Similar Starters</h3>
+							<h3>Similar starters</h3>
 							<ul>
 								{singleStarter.updowngradeItems.map(
 									(updowngradeItem, i) => {
