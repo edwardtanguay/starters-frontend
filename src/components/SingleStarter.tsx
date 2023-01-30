@@ -58,7 +58,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 					/>
 					{singleStarter.updowngradeItems.length > 0 && (
 						<div className="updowngradeItemsArea">
-							<h3>Add/remove features</h3>
+							<h3>Similar Starters</h3>
 							<ul>
 								{singleStarter.updowngradeItems.map(
 									(updowngradeItem, i) => {
@@ -119,7 +119,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 
 					{singleStarter.externalForkItems.length > 0 && (
 						<div className="externalForkArea">
-							<h3>External forks</h3>
+							<h3>Similar external repositories</h3>
 							<ul>
 								{singleStarter.externalForkItems.map(
 									(externalForkItem, i) => {
