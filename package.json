@@ -11,6 +11,7 @@
 		"startOLD2": "vite start --host --port 3506",
 		"start": "vite serve dist --port 3506",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu",
+		"qd": "git pull --no-rebase && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
 		"push": "git add . && git commit -m \"predeploy\" && git push",
 		"cp": "node cli/cp.mjs"
 	},
