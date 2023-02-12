@@ -8,7 +8,8 @@
 		"build": "tsc --build --clean && vite build",
 		"setup": "pm2 start --name starters-tanguay-eu npm -- start",
 		"startOLD": "vite preview --host --port 3506",
-		"start": "vite start --host --port 3506",
+		"startOLD2": "vite start --host --port 3506",
+		"start": "vite serve dist --port 3506",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu",
 		"push": "git add . && git commit -m \"predeploy\" && git push",
 		"cp": "node cli/cp.mjs"
