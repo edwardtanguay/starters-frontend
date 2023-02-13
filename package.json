@@ -6,12 +6,10 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc --build --clean && vite build",
-		"setup": "npm i && pm2 start --name starters-tanguay-eu npm -- start --update-env --time && pm2 save",
 		"start": "vite serve --host --port 3506",
-		"install-build-deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
-		"build-deploy": "git pull --no-rebase && npm run build && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
-		"deploy": "git pull --no-rebase && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
-		"cp": "node cli/cp.mjs"
+		"cp": "node cli/cp.mjs",
+		"setup": "npm i && pm2 start --name starters-tanguay-eu npm -- start --update-env --time && pm2 save",
+		"deploy": "git pull --no-rebase && pm2 restart starters-tanguay-eu --update-env --time && pm2 save"
 	},
 	"dependencies": {
 		"axios": "^1.2.1",
