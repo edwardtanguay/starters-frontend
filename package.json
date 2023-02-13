@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc --build --clean && vite build",
-		"setup": "pm2 start --name starters-tanguay-eu npm -- start",
+		"setup": "npm i && pm2 start --name starters-tanguay-eu npm -- start",
 		"start": "vite serve --host --port 3506",
 		"install-build-deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
 		"build-deploy": "git pull --no-rebase && npm run build && pm2 restart starters-tanguay-eu --update-env --time && pm2 save",
