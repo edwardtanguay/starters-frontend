@@ -127,9 +127,7 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 											<li key={i}>
 												<a
 													target="_blank"
-													href={
-														externalForkItem.url
-													}
+													href={externalForkItem.url}
 												>
 													{externalForkItem.title}
 												</a>
@@ -155,12 +153,18 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 
 				<div className="info">
 					<div className="title">{singleStarter.title}</div>
-					<div className="description">
-						{singleStarter.description}
-					</div>
+					<div
+						className="description"
+						dangerouslySetInnerHTML={{
+							__html: convertMarkdownToHtml(
+								singleStarter.description
+							),
+						}}
+					></div>
 					<RepositoryButtons starter={singleStarter} />
 					{!showReadme && (
-						<div className="features"
+						<div
+							className="features"
 							dangerouslySetInnerHTML={{
 								__html: convertMarkdownToHtml(
 									singleStarter.featureMarkdown
@@ -183,7 +187,9 @@ export const SingleStarter = ({ singleStarter }: IProps) => {
 				<div className="animationArea">
 					<div className="animationTitle">Animation</div>
 					<div className="moreInfoArea">
-						<img src={`/images/starters/${singleStarter.idCode}.gif`}/>
+						<img
+							src={`/images/starters/${singleStarter.idCode}.gif`}
+						/>
 					</div>
 				</div>
 			)}
